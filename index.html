@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio Felipe Santiago</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <!--Fonts do body e do h1-->
     <link rel="stylesheet" href=<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300;400&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <h1>Felipe Santiago</h1>
-    <!---Seção 1--->
-    <img id="Minhafoto" src="minhaimagem.jpg" width="300 " alt="Foto de Felipe Santiago, homen de pele escura, olhos castanhos e cabelo crespo baixo">
-    <!---Seção 2--->
-    <h3>Índice</h3>
-    <ul>
-        <li><a href="#habilidade">Habilidades</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-    </ul>
+<style>
+    * {
+        margin: 0%;
+    }
 
-    <h2>Um pouco sobre mim</h2>
-    <p><strong>Brasileiro</strong>, cidadão da cidade de <strong>São Paulo</strong>.<br>
-    <em>Formado em gestão de logística</em> com experiência na Indústria automobilística.<br>
-    Estudando <strong>Desenvolvimento Web Fullstack</strong> por amar tecnologia e enxergar nessa área a possibilidade de transformar vidas.</p>
+    .header {
+        background-image: url(/assets/mini-profile-bg-01.jpg);
+        background-position: 50% 25%;
+        height: 400px;
+    }
+
+    #name {
+        font-family: Dancing Script;
+        font-size: 50px;
+        background-color: rgba(248, 248, 248, 0.308);
+        position: relative;
+        text-align: center;
+        top: 200px;
+    }
+
+    .aboutMe {
+        text-align: center;
+        margin: 20px auto;
+        width: 50%;
+        padding: 60px;
+        clear: both;
+    }
+    .aboutMe p{
+        margin: 25px;
+    }
+
+    .myimage {
+        width: 250px;
+        float: left;
+        border-radius: 100px;
+        clear: both;
+        margin: 10px;
+    }
+
+
+    .indice {
+        position: realtive;
+        padding: 6em 15px;
+    }
+
+    body {
+        font-size: 20px;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div id="name">
+            <h1>Felipe Santiago</h1>
+        </div>
+    </div>
+
+    <div class="aboutMe">
+        
+        <img class="myimage" src="/assets/minhaimagem.jpg" alt="homen negro de cabelo crespo raspado" width="50%">
+        <h2>Um pouco sobre mim</h2>
+
+        <p><strong>Brasileiro</strong>, cidadão da cidade de <strong>São Paulo</strong>.<br>
+            <em>Formado em gestão de logística</em> com experiência na Indústria automobilística.<br>
+            Estudando <strong>Desenvolvimento Web Fullstack</strong> por amar tecnologia e enxergar nessa área a
+            possibilidade de transformar vidas.</p>
+    </div>
+
     <!---Seção 3--->
     <h2 id="habilidades">Habilidades em desenvolvimento</h2>
     <h3>Front-end</h3>
@@ -47,7 +104,18 @@
         <li><a href="https://github.com/devsfelipesantiago" target="_blank">GitHub</a></li>
     </ul>
     <!---Seção 5--->
-    <a href="#Minhafoto"><p>Fotografia</p></a>
+    <a href="#Minhafoto">
+        <p>Fotografia</p>
+    </a>
+
+    <div class="indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#habilidade">Habilidades</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </div>
 
 </body>
+
 </html>
